@@ -1,5 +1,6 @@
-baseURL = "https://zhangkaishen.github.io/homepage"
+baseURL = "https://dylanchiang-dev.github.io/homepage"
 title = "My Homepage"
+theme = "lynx"
 
 enableEmoji = true
 disableKinds = ["taxonomy", "term"]

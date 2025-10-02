@@ -1,0 +1,26 @@
+baseURL = "https://zhangkaishen.github.io/homepage"
+languageCode = "en-us"
+title = "My Homepage"
+
+enableEmoji = true
+disableKinds = ["taxonomy", "term"]
+
+# Theme configuration
+theme = "."
+
+[params.author]
+  name = "Your Name"
+  headline = "Welcome to my personal homepage"
+  image = "author.jpg"
+  links = [
+    { github = "https://github.com/yourusername" },
+    { email = "mailto:your.email@example.com" },
+    { linkedin = "https://linkedin.com/in/yourprofile" },
+  ]
+
+[markup.highlight]
+  noClasses = false
+
+[markup.goldmark]
+[markup.goldmark.renderer]
+  unsafe = true
