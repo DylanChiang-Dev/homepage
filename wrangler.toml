@@ -1,0 +1,13 @@
+name = "homepage"
+compatibility_date = "2024-01-01"
+
+[env.production]
+# Cloudflare Pages 會自動處理部署，這個文件主要用於本地開發和配置參考
+
+# 構建配置（在 Cloudflare Pages 控制台中設置）
+# Build command: hugo --gc --minify
+# Build output directory: public
+# Root directory: /
+# Environment variables:
+#   HUGO_VERSION = 0.150.1
+#   NODE_VERSION = 18
