@@ -2,6 +2,11 @@ name: Build Theme
 
 on: [pull_request_target]
 
+# Sets permissions of the GITHUB_TOKEN to allow commits and pushes
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -19,7 +24,5 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           branch: "${{ github.head_ref }}"
-          push_options: "--dry-run"
           file_pattern: "assets/css/compiled/main.css"
           commit_message: "💄 Rebuild CSS"
-      - run: git push
